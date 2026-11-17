@@ -2,15 +2,14 @@
   <title id="title">Tomás Garay</title>
   <style>
     .name-live, .name-still {
-      fill: #17253D;
+      fill: #24292F;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 94px;
       letter-spacing: -2px;
     }
-    .surname { fill: #2858BD; font-style: italic; }
+    .surname { font-style: italic; }
     @media (prefers-color-scheme: dark) {
-      .name-live, .name-still { fill: #EDF3FF; }
-      .surname { fill: #89ACFF; }
+      .name-live, .name-still { fill: #E6EDF3; }
     }
     @media (prefers-reduced-motion: reduce) {
       .name-live { display: none; }
