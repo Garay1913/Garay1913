@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="230" viewBox="0 0 850 230" role="img" aria-labelledby="title">
+  <title id="title">Tomás Garay — Computer Engineering Student | UNC</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071128"/>
+      <stop offset="1" stop-color="#142e64"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#152d61"/>
+      <stop offset="1" stop-color="#09152f"/>
+    </linearGradient>
+    <clipPath id="typing">
+      <rect class="reveal" x="65" y="72" width="352" height="65"/>
+    </clipPath>
+    <clipPath id="shield">
+      <path d="M-27 -29H27V-2Q27 18 0 30Q-27 18 -27 -2Z"/>
+    </clipPath>
+  </defs>
+  <style>
+    /* Colores alternados del nombre. */
+    .blue { fill: #3f70f8; }
+    .white { fill: #ffffff; }
+    .reveal { animation: type 8s steps(11,end) infinite; }
+    .cursor { animation: move 8s steps(11,end) infinite, blink .8s step-end infinite; }
+    @keyframes type {
+      0%, 7% { width: 0; }
+      42%, 85% { width: 352px; }
+      100% { width: 0; }
+    }
+    @keyframes move {
+      0%, 7% { transform: translateX(0); }
+      42%, 85% { transform: translateX(352px); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { animation: none; width: 352px; }
+      .cursor { animation: none; transform: translateX(352px); }
+    }
+  </style>
+  <rect x="1" y="1" width="848" height="228" rx="16" fill="url(#bg)" stroke="#32549a" stroke-width="2"/>
+  <path d="M17 210H833" stroke="#3564c4" stroke-opacity=".24"/>
+  <g font-family="Consolas, 'DejaVu Sans Mono', monospace">
+    <circle cx="29" cy="25" r="4" fill="#397bff"/>
+    <circle cx="44" cy="25" r="4" fill="#f4f7ff"/>
+    <circle cx="59" cy="25" r="4" fill="#397bff"/>
+    <text x="65" y="63" fill="#79a5ff" font-size="17">$ whoami</text>
+    <!-- Nombre: una letra por posición, con alternancia continua. -->
+    <text y="119" font-size="50" font-weight="700" clip-path="url(#typing)"><tspan x="65" class="blue">T</tspan><tspan x="97" class="white">o</tspan><tspan x="129" class="blue">m</tspan><tspan x="161" class="white">á</tspan><tspan x="193" class="blue">s</tspan><tspan x="257" class="white">G</tspan><tspan x="289" class="blue">a</tspan><tspan x="321" class="white">r</tspan><tspan x="353" class="blue">a</tspan><tspan x="385" class="white">y</tspan></text>
+    <rect class="cursor" x="65" y="80" width="3" height="47" fill="#397bff"/>
+    <text x="65" y="155" font-size="18" fill="#f4f7ff">Computer Engineering Student | UNC</text>
+    <text x="65" y="189" font-size="16" fill="#9abaff">Software · Hardware · Networking</text>
+  </g>
+  <!-- Microchip con escudo original inspirado en los bastones albiazules. -->
+  <g transform="translate(682 106)" fill="none" stroke="#4d82f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-49 -25H-68L-89 -45H-112 M-49 0H-119 M-49 25H-68L-89 45H-112 M49 -25H68L89 -45H112 M49 0H119 M49 25H68L89 45H112 M-26 -49V-65L-40 -80 M0 -49V-80 M26 -49V-65L40 -80 M-26 49V65 M0 49V65 M26 49V65" opacity=".85"/>
+    <g fill="#79a5ff" stroke="none"><circle cx="-112" cy="-45" r="3"/><circle cx="-119" cy="0" r="3"/><circle cx="-112" cy="45" r="3"/><circle cx="112" cy="-45" r="3"/><circle cx="119" cy="0" r="3"/><circle cx="112" cy="45" r="3"/><circle cx="-40" cy="-80" r="3"/><circle cx="0" cy="-80" r="3"/><circle cx="40" cy="-80" r="3"/><circle cx="-26" cy="65" r="3"/><circle cx="0" cy="65" r="3"/><circle cx="26" cy="65" r="3"/></g>
+    <rect x="-49" y="-49" width="98" height="98" rx="12" fill="url(#chip)"/>
+    <rect x="-40" y="-40" width="80" height="80" rx="7" stroke="#3458a5" stroke-width="1"/>
+    <g clip-path="url(#shield)" stroke="none">
+      <rect x="-27" y="-30" width="54" height="64" fill="#10295c"/>
+      <path d="M-18 -7H-10V32H-18Z M-4 -7H4V32H-4Z M10 -7H18V32H10Z" fill="#f4f7ff"/>
+    </g>
+    <path d="M-27 -29H27V-2Q27 18 0 30Q-27 18 -27 -2Z" stroke="#9abaff" stroke-width="1.5"/>
+    <text x="0" y="-13" fill="#f4f7ff" stroke="none" text-anchor="middle" font-family="Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" font-size="16">&lt;/&gt;</text>
+    <text x="0" y="87" fill="#9abaff" stroke="none" text-anchor="middle" font-family="Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" font-size="12" letter-spacing="3">1913</text>
+  </g>
+</svg>
